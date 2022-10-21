@@ -1,32 +1,31 @@
-/****
- * @Author: Muhammad Yousuf Ali
- * @Since: TuesDay; 17 September 2019
+/**
+ * @file DimikPro_5.cpp
+ * @author Md. Yousuf Ali (yousuf.cse17@gmail.com)
+ * @brief Make square box. It got presentation error
+ * @version 0.1
+ * @date 2019-09-17
+ * @since TuesDay; 10:10 PM
+ * @copyright Copyright (c) 2022
+ * Dept. of CSE, Varendra University, Rajshahi, Bangladesh
  */
 
 #include <iostream>
 using namespace std;
 
-int main(int argc, char const *argv[])
-{
-    short i,j,num,testCase;
+int main(int argc, char const *argv[]){
+    system("cls");
+    short int i ,j ,num, testCase;
 
     cin>>testCase;
-    while (testCase>0)
-    {
+    while(testCase--){
         cin>>num;
-        for(i = 1 ; i<=num;i++)
-        {
-            for(j = 1 ; j<=num;j++)
-            {
+        for(i = 1 ; i<=num;i++){
+            for(j = 1 ; j<=num;j++){
                 cout<<"*";
             }
             cout<<endl;
         }
-        testCase--;
-        // cout<<"\n"<<endl;
+        cout<<endl;
     }
-    
-
-
     return 0;
 }
