@@ -1,12 +1,12 @@
 /**
  * @file DimikPro_12.cpp
  * @author Md. Yousuf Ali (yousuf.cse17@gmail.com)
- * @brief 
+ * @brief Big factorial count zero's
  * @version 0.1
  * @date 2022-06-21
- * 
+ * @since 04:37 PM
  * @copyright Copyright (c) 2022
- * 
+ * Dept. of CSE, Varendra University, Rajshahi, Bangladesh
  */
 
 #include <iostream>
@@ -20,20 +20,20 @@ unsigned int fiveCounter(unsigned int n){
        result = n / 5;
        ++count;
        /*If result will be these multplication then to needed other wise throwing*/
-       if(result == 5 || result == 10 || result == 15 || result == 20){
+        if(result == 5 || result == 10 || result == 15 || result == 20){
             /*Upon result setup 5 + 10 + 15 + 20 for n == 100*/
             n = result;
-       }
-       else{
+        }
+        else{
             break;
-       }
+        }
     }
     return count;
 }
 
-int main(int argc, char const *argv[])
-{
+int main(int argc, char const *argv[]){
     /* code */
+    system("cls");
     int testCase;
     cout<<"Enter the test case here: ";
     cin>>testCase;
@@ -54,6 +54,5 @@ int main(int argc, char const *argv[])
         }
         cout<<numberOfFive<<endl;
     }
-   
     return 0;
 }
